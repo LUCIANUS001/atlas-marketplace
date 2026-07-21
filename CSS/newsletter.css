@@ -1,0 +1,39 @@
+/*Newsletter Section*/
+.newsletter{
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--secondary-color);
+}
+
+/* Section Headings*/
+.newsletter h2{
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.newsletter-form{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.newsletter-form input{
+  width: 350px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  font-size: 16px;
+}
+#newsletter-message{
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.success{
+  color: green;
+}
+
+.error{
+  color: red;
+}

@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Atlas Marketplace -Shop smarter and sell globally."
+    />
+    <title>Atlas Marketplace</title>
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/buttons.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="logo">
+      <div class="container">
+        <h1 class="logo-text">ATLAS</h1>
+        <button class="menu-toggle">&#9776;</button>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Categories</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="auth-buttons">
+          <div class="auth-buttons">
+            <button class="theme-toggle">🌙</button>
+
+            <button class="vault-btn-nav">
+              🧭 Vault (<span id="vault-count">0</span>)
+            </button>
+
+            <button class="cart-btn">
+              🛒 Cart (<span id="cart-count">0</span>) $<span id="cart-total"
+                >0</span
+              >
+            </button>
+
+            <button class="login-btn">Login</button>
+
+            <button class="signup-btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="hero">
+      <h1>Shop Smarter. Sell Globally.</h1>
+
+      <p class="hero-p">
+        Discover trusted sellers from around the world. Find quality products
+        with confidence, or grow your business by reaching customers everywhere.
+      </p>
+
+      <div class="hero-btns">
+        <button type="button" class="btn-start">Start Shopping</button>
+        <button type="button" class="btn-seller">Become a Seller</button>
+      </div>
+    </section>
+
+    <!--Product Search-->
+    <section class="search-section">
+      <div class="container">
+        <h2>Find Your Product</h2>
+        <input type="text" id="search-input" placeholder="search products..." />
+        <p id="no-results" style="display: none">No products found.</p>
+      </div>
+    </section>
+
+    <!--Shop by category-->
+    <section class="categories">
+      <h2>Shop by Category</h2>
+      <p>Explore our most popular shopping categories.</p>
+
+      <div class="category-container">
+        <div class="category-card"><h3>Men's Fashion</h3></div>
+        <div class="category-card"><h3>Women's Fashion</h3></div>
+        <div class="category-card"><h3>Shoes</h3></div>
+        <div class="category-card"><h3>Bags</h3></div>
+      </div>
+    </section>
+
+    <!--Featured Products-->
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <p>Discover our handpicked products from trusted sellers.</p>
+
+      <!-- Product Filter -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+
+        <button class="filter-btn" data-filter="shoe">Shoes</button>
+
+        <button class="filter-btn" data-filter="bag">Bags</button>
+
+        <button class="filter-btn" data-filter="watch">Watches</button>
+
+        <button class="filter-btn" data-filter="hoodie">Hoodies</button>
+      </div>
+
+      <div class="product-container">
+        <p id="no-results" style="display: none">No products found</p>
+
+        <!-- Product Card 1 -->
+        <div
+          class="product-card"
+          data-name="running shoe"
+          data-category="shoe"
+          data-price="120"
+        >
+          <div class="product-image">Product Image</div>
+
+          <h3>Running Shoe</h3>
+
+          <p class="rating">★★★★★</p>
+
+          <p class="price">$120</p>
+
+          <div class="product-actions">
+            <button class="vault-btn">🧭 Save to Vault</button>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div
+          class="product-card"
+          data-name="leather bag"
+          data-category="bag"
+          data-price="85"
+        >
+          <div class="product-image">Product Image</div>
+
+          <h3>Leather Bag</h3>
+
+          <p class="rating">★★★★★</p>
+
+          <p class="price">$85</p>
+
+          <div class="product-actions">
+            <button class="vault-btn">🧭 Save to Vault</button>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div
+          class="product-card"
+          data-name="luxury watch"
+          data-category="watch"
+          data-price="250"
+        >
+          <div class="product-image">Product Image</div>
+
+          <h3>Luxury Watch</h3>
+
+          <p class="rating">★★★★★</p>
+
+          <p class="price">$250</p>
+
+          <div class="product-actions">
+            <button class="vault-btn">🧭 Save to Vault</button>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div
+          class="product-card"
+          data-name="classic hoodie"
+          data-category="hoodie"
+          data-price="70"
+        >
+          <div class="product-image">Product Image</div>
+
+          <h3>Classic Hoodie</h3>
+
+          <p class="rating">★★★★★</p>
+
+          <p class="price">$70</p>
+
+          <div class="product-actions">
+            <button class="vault-btn">🧭 Save to Vault</button>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Why Choose Atlas Section-->
+    <section class="why-choose">
+      <h2>Why Choose Atlas</h2>
+      <p>Experience secure, reliable, and global shopping with confidence.</p>
+
+      <div class="choose-container">
+        <!--Card 1-->
+        <div class="choose-card">
+          <div class="icon">🛡️</div>
+          <h3>Secure Payments</h3>
+          <p>Your money is protected until your order is delivered.</p>
+        </div>
+
+        <!--Card 2-->
+        <div class="choose-card">
+          <div class="icon">🌍</div>
+          <h3>Global Sellers</h3>
+          <p>Connect with trusted sellers from around the world.</p>
+        </div>
+
+        <!--Card 3-->
+        <div class="choose-card">
+          <div class="icon">🚚</div>
+          <h3>Fast Delivery</h3>
+          <p>Reliable shipping directly to your doorstep.</p>
+        </div>
+
+        <!--Card 4-->
+        <div class="choose-card">
+          <div class="icon">⭐</div>
+          <h3>Verified Quality</h3>
+          <p>Every seller is carefully reviewed before joining Atlas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop by Mood Section-->
+    <section class="shop-mood">
+      <h2>Shop by Mood</h2>
+      <p>Find your perfect style by choosing a fashion mood.</p>
+
+      <div class="mood-container">
+        <!--Mood Card 1-->
+        <div class="mood-card">
+          <div class="mood-image">Image</div>
+          <h3>Streetwear</h3>
+          <p>Urban fashion with a bold and modern look.</p>
+        </div>
+
+        <!--Mood Card 2-->
+        <div class="mood-card">
+          <div class="mood-image">Image</div>
+          <h3>Corporate</h3>
+          <p>Professional outfits for work and business.</p>
+        </div>
+
+        <!--Mood Card 3-->
+        <div class="mood-card">
+          <div class="mood-image">Image</div>
+          <h3>Luxury</h3>
+          <p>Premium collections for elegant lifestyles.</p>
+        </div>
+
+        <!--Mood Card 4-->
+        <div class="mood-card">
+          <div class="mood-image">Image</div>
+          <h3>Heritage</h3>
+          <p>Celebrate culture with timeless fashion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--Become a Seller Section-->
+    <section class="become-seller">
+      <h2>Become a Seller</h2>
+      <p>
+        Join thousands of trusted sellers and grow your business with customers
+        from around the world.
+      </p>
+
+      <div class="seller-content">
+        <!--Seller Image-->
+        <div class="seller-image">Seller Image</div>
+
+        <!--Seller Information-->
+        <div class="seller-text">
+          <h3>Grow Your Business with Atlas</h3>
+          <p>
+            Reach millions of buyers, manage your products, track your sales,
+            and build a trusted global store on Atlas.
+          </p>
+          <button>Become a Seller</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Newsletter Section-->
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
+      <p>
+        Subscribe to receive the latest fashion trends exclusive offers, and new
+        arrivals.
+      </p>
+      <form class="newsletter-form">
+        <input
+          type="email"
+          id="newsletter-email"
+          placeholder="Enter your email address"
+        />
+
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <p id="newsletter-message"></p>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <aside class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button class="close-cart">&times;</button>
+      </div>
+
+      <div class="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-summary">
+          <p>
+            <span>Subtotal</span>
+            <span>$<span id="sidebar-subtotal">0</span></span>
+          </p>
+
+          <p>
+            <span>Shipping</span>
+            <span>FREE</span>
+          </p>
+
+          <p>
+            <span>Tax</span>
+            <span>$0</span>
+          </p>
+
+          <hr />
+
+          <h3>
+            <span>Total</span>
+            <span>$<span id="sidebar-total">0</span></span>
+          </h3>
+        </div>
+
+        <button class="checkout-btn">Proceed to Checkout</button>
+
+        <button class="clear-cart">Clear Cart</button>
+      </div>
+    </aside>
+
+    <!-- ===============================
+     Atlas Vault Sidebar
+================================ -->
+
+    <div class="vault-sidebar">
+      <!-- Header -->
+      <div class="vault-header">
+        <div class="vault-title">
+          <h2>🧭 Atlas Vault</h2>
+
+          <p class="vault-subtitle">Your saved discoveries</p>
+        </div>
+
+        <button class="close-vault">&times;</button>
+      </div>
+
+      <!-- Vault Items -->
+
+      <div class="vault-items">
+        <p class="empty-vault">
+          🧭<br /><br />
+          Your Atlas Vault is empty.<br />
+          Save products to view them here.
+        </p>
+      </div>
+    </div>
+
+    <!--Footer section-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!--Brand-->
+        <div class="footer-brand">
+          <h2>ATLAS</h2>
+
+          <p>connecting trusted sellers with buyers around the world.</p>
+        </div>
+
+        <!--Quick links-->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#">Categories</a>
+          <a href="#">Shop by Mood</a>
+          <a href="#">Become a Seller</a>
+        </div>
+
+        <!--Contact-->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Email: support@atlas.com</p>
+          <p>Phone: +234 xxxxxxxxxx</p>
+        </div>
+
+        <!--Social Media-->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+          <a href="#">X (Twitter)</a>
+        </div>
+      </div>
+
+      <!--Copyright-->
+      <div class="footer-bottom">
+        <p>© 2026 Atlas. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <div class="checkout-modal">
+      <div class="checkout-box">
+        <h2>Checkout</h2>
+
+        <p>Thank you for shopping with <strong>Atlas</strong>.</p>
+
+        <p>
+          Your Total: <strong>$<span id="checkout-total">0</span></strong>
+        </p>
+
+        <button class="confirm-order">Confirm Order</button>
+        <button class="close-checkout">Cancel</button>
+      </div>
+    </div>
+
+    <script src="java.js/app.js"></script>
+    <script src="java.js/helpers.js"></script>
+
+    <script src="java.js/newsletter.js"></script>
+    <script src="java.js/mobile.js"></script>
+    <script src="java.js/theme.js"></script>
+    <script src="java.js/search.js"></script>
+    <script src="java.js/filter.js"></script>
+    <script src="java.js/vault.js"></script>
+    <script src="java.js/cart.js"></script>
+    <script src="java.js/checkout.js"></script>
+  </body>
+</html>

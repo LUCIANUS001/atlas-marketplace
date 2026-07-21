@@ -1,0 +1,143 @@
+/* 5. Featured Products*/
+.featured-products{
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Section Headings*/
+.featured-products h2{
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.product-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.product-card{
+  width: 230px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all .3s ease;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+.product-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+}
+.product-image{
+  height: 180px;
+  background-color: var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  color: var(--text-light);
+}
+.product-card h3{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.rating{
+  color: gold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.price{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Why Choose Atlas Section */
+.why-choose{
+  text-align: center;
+  padding: 80px 20px;
+}
+.choose-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.choose-card{
+  width: 250px;
+  padding: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all .3s ease;
+  background-color: var(--secondary-color);
+}
+.choose-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+}
+.icon{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.choose-card h3{
+  margin-bottom: 15px;
+}
+.choose-card p{
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Shop by Mood Section*/
+.shop-mood{
+  text-align: center;
+  padding: 80px 20px;
+}
+.mood-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.mood-card{
+  width: 250px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all .3s ease;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+.mood-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+}
+.mood-image{
+  height: 180px;
+  background-color: var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  color: var(--text-light);
+}
+.mood-card h3{
+  margin-bottom: 15px;
+}
+.mood-card p{
+  line-height: 1.6;
+  color: var(--text-light);
+}

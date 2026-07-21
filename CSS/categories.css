@@ -1,0 +1,31 @@
+/* 4. Shop by Category section*/
+.categories{
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--secondary-color);
+}
+.category-container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.category-card{
+  width: 220px;
+  padding: 30px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.category-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+}
+
+/* Section Headings*/
+.categories h2{
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

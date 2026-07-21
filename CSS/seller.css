@@ -1,0 +1,49 @@
+/*Become a Seller Section*/
+.become-seller{
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Section Headings*/
+.become-seller h2{
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.seller-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.seller-image{
+  width: 350px;
+  height: 300px;
+
+  background-color: var(--border-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+
+  font-weight: bold;
+  color: var(--text-light);
+}
+.seller-text{
+  max-width: 450px;
+  text-align: left;
+}
+.seller-text h3{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.seller-text p{
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: var(--text-light);
+}

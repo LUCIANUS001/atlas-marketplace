@@ -1,0 +1,100 @@
+/*Responsive Design*/
+@media (max-width: 768px){
+  /*Mobile styles goes here*/
+  nav{
+    height: auto;
+  }
+
+  nav .container{
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  /* Hero sections*/
+  .hero{
+    padding: 70px 20px;
+  }
+  .hero h1{
+    font-size: 40px;
+  }
+  .hero-p{
+    font-size: 16px;
+  }
+
+  /*Shop by Category, Featured Products, Why choose Atlas and Shop by mood*/
+  .category-container,
+  .product-container,
+  .choose-container,
+  .mood-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .category-card,
+  .product-card,
+  .choose-card,
+  .mood-card{
+    width: 90%;
+    max-width: 320px;
+  }
+
+  /*Become a Seller*/
+  .seller-content{
+    flex-direction: column;
+    text-align: center;
+  }
+  .seller-image{
+    width: 90%;
+    max-width: 350px;
+    height: 250px;
+  }
+  .seller-text{
+    text-align: center;
+  }
+
+  /*Newsletter*/
+  .newsletter-form{
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter-form input{
+    width: 90%;
+    max-width: 350px;
+  }
+
+  /*Footer section*/
+  .footer-container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .menu-toggle{
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-links,
+  .auth-buttons{
+    display: none;
+  }
+
+  .nav-links.active,
+  .auth-buttons.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+  }
+
+  #search-input{
+    width: 90%;
+  }
+
+}

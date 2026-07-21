@@ -1,0 +1,36 @@
+/* Product Search Section */
+.search-section{
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.search-section h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#search-input{
+    width: 100%;
+    max-width: 500px;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    outline: none;
+    transition: all .3s ease;
+}
+
+#search-input:focus{
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(15, 23, 42, 0.15);
+}
+
+/* No Results Message*/
+#no-results{
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-light);
+}

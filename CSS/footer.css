@@ -1,0 +1,43 @@
+/* 6. Footer*/
+.footer{
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 60px 20px 20px;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer h2,
+.footer h3{
+  margin-bottom: 20px;
+}
+.footer h2{
+  letter-spacing: 2px;
+}
+.footer p{
+  line-height: 1.8;
+  color: var(--footer-text-color);
+}
+.footer a{
+  display: block;
+  color: var(--footer-text-color);
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: .3s;
+}
+.footer a:hover{
+  color: var(--white);
+}
+
+/* Footer bottom*/
+.footer-bottom{
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--primary-hover-color);
+}

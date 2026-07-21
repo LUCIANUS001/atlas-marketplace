@@ -1,0 +1,27 @@
+/*Atlas Color System*/
+:root{
+  --primary-color: #0f172a;
+  --secondary-color: #F5F5F3;
+  --background-color: #ffffff;
+  --card-bg:#ffffff;
+  --text-color: #1A1A1A;
+  --text-light: #64748b;
+  --border-color: #E5E5E2;
+  --white: #ffffff;
+  --footer-text-color: #cbd5e1;
+  --primary-hover-color: #334155;
+  --text-hover-color: #333333;
+}
+.dark-mode{
+  --primary-color: #2563eb;
+  --secondary-color: #1e293b;
+  --background-color: #0f172a;
+  --card-bg: #17233b;
+  --text-color: #f8fafc;
+  --text-light: #cbd5e1;
+  --border-color: #334155;
+  --white: #ffffff;
+  --footer-text-color: #cbd5e1;
+  --primary-hover-color: #3b82f6;
+  --text-hover-color: #ffffff;
+}

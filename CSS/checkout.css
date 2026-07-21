@@ -1,0 +1,66 @@
+/* ===============================
+   Checkout Modal
+================================ */
+
+.checkout-modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.checkout-modal.active{
+    display: flex;
+}
+
+.checkout-box{
+    background: var(--background-color);
+    color: var(--text-color);
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+
+.checkout-box h2{
+    margin-bottom: 15px;
+}
+
+.checkout-box p{
+    margin: 12px 0;
+}
+
+.confirm-order,
+.close-checkout{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.confirm-order{
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.confirm-order:hover{
+    background: var(--primary-hover-color);
+}
+
+.close-checkout{
+    background: #dc2626;
+    color: white;
+}
+
+.close-checkout:hover{
+    background: #b91c1c;
+}

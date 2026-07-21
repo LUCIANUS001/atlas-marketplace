@@ -1,0 +1,17 @@
+/* 3. Hero section*/
+.hero{
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1{
+  font-size: 56px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.hero-p{
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}

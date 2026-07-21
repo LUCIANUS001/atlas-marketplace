@@ -1,0 +1,283 @@
+/* Navigation buttons*/
+.login-btn{
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.login-btn:hover{
+  background-color: var(--primary-hover-color);
+   transform: translateY(-3px);
+}
+
+.signup-btn{
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 12px;
+  transition: all 0.3s ease;
+}
+.signup-btn:hover{
+  background-color: var(--text-color);
+  color: var(--background-color);
+  transform: translateY(-3px);
+}
+
+/* Hero section buttons*/
+.hero-btns{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+}
+button{
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  outline: none;
+}
+.btn-start{
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: 1px solid var(--primary-color);
+}
+.btn-start:hover{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transform: translateY(-5px);
+}
+
+.btn-seller{
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1.5px solid var(--primary-color);
+}
+.btn-seller:hover{
+  background-color: rgba(30, 41, 59, 0.05);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .15);
+}
+
+/*Featured product buttons*/
+.product-card button{
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.product-card button:hover{
+  background-color: var(--primary-hover-color);
+  transform: translateY(-3px);
+}
+
+/*Become a Seller Section*/
+.seller-text button{
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.seller-text button:hover{
+  background-color: var(--primary-hover-color);
+  transform: translateY(-3px);
+}
+
+/*Newsletter Section button*/
+.newsletter-form button{
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.newsletter-form button:hover{
+  background-color: var(--primary-hover-color);
+  transform: translateY(-3px);
+}
+
+.theme-toggle{
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: transform .3s ease;
+  }
+
+  .theme-toggle:hover{
+    transform: rotate(20deg)scale(1.1);
+  }
+
+  /* Filter Buttons */
+
+.filter-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin:40px 0;
+}
+
+.filter-btn{
+    padding:12px 24px;
+    border:none;
+    border-radius:12px;
+    background:var(--secondary-color);
+    color:var(--text-color);
+    cursor:pointer;
+    font-weight:600;
+    transition:all .3s ease;
+}
+
+.filter-btn:hover{
+    background:var(--primary-color);
+    color:var(--white);
+    transform:translateY(-3px);
+}
+
+.filter-btn.active{
+    background:var(--primary-color);
+    color:var(--white);
+}
+
+.cart-btn{
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .3s ease;
+    margin-right: 12px;
+}
+
+.cart-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.clear-cart{
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #dc2626;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+.clear-cart:hover{
+    background-color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* Item already in cart */
+.in-cart{
+    background-color: #dc2626 !important;
+    border-color: #dc2626 !important;
+    color: white !important;
+}
+
+.in-cart:hover{
+    background-color: #b91c1c !important;
+}
+
+/* ===============================
+   Product Action Buttons
+================================ */
+
+.product-actions{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.product-actions button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+/* Atlas Vault Button */
+
+.vault-btn{
+    background:#F5F5F3;
+    color:#222;
+    border:1px solid #D6D3D1;
+}
+
+.vault-btn:hover{
+    background:#E7E5E4;
+}
+
+/* Add to Cart Button */
+
+.product-actions button:last-child{
+    background:#111827;
+    color:#fff;
+}
+
+.product-actions button:last-child:hover{
+    background:#000;
+}
+
+@media (max-width: 768px){
+  /*Hero section*/
+  .hero-btns{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-btns button{
+    width: 220px;
+  }
+
+  /*Newsletter*/
+  .newsletter-form button{
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .auth-buttons.active{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+}
