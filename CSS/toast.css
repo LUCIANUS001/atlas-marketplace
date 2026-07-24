@@ -1,0 +1,66 @@
+/* ===============================
+   Toast Notification
+================================ */
+
+.toast{
+    position: fixed;
+    top: 30px;
+    right: -420px;
+
+    min-width: 320px;
+    max-width: 380px;
+
+    padding: 16px 22px;
+
+    border-radius: 14px;
+
+    background: var(--background-color);
+    color: var(--text-color);
+
+    border: 1px solid var(--border-color);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.18);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: right .4s ease;
+
+    z-index: 9999;
+}
+
+.toast.show{
+    right: 25px;
+}
+
+/* Dark Mode */
+
+body.dark-mode .toast{
+    background: #17233b;
+    border: 1px solid rgba(255,255,255,.08);
+    color: #fff;
+}
+
+/* ===============================
+   Toast Types
+================================ */
+
+.toast.success{
+    background:#16a34a;
+    color:#fff;
+}
+
+.toast.info{
+    background:#2563eb;
+    color:#fff;
+}
+
+.toast.warning{
+    background:#ea580c;
+    color:#fff;
+}
+
+.toast.error{
+    background:#dc2626;
+    color:#fff;
+}

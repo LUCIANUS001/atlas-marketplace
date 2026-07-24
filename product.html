@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Atlas Marketplace -Shop smarter and sell globally."
+    />
+    <title>Atlas Marketplace</title>
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/buttons.css" />
+    <link rel="stylesheet" href="CSS/toast.css" />
+    <link rel="stylesheet" href="CSS/product.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="logo">
+      <div class="container">
+        <h1 class="logo-text">ATLAS</h1>
+        <button class="menu-toggle">&#9776;</button>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Categories</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="auth-buttons">
+          <div class="auth-buttons">
+            <button class="theme-toggle">🌙</button>
+
+            <button class="vault-btn-nav">
+              🧭 Vault (<span id="vault-count">0</span>)
+            </button>
+
+            <button class="cart-btn">
+              🛒 Cart (<span id="cart-count">0</span>) $<span id="cart-total"
+                >0</span
+              >
+            </button>
+
+            <button class="login-btn">Login</button>
+
+            <button class="signup-btn">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===============================
+     Product Details
+    ================================ -->
+
+    <section class="product-details">
+      <div class="container product-details-container">
+        <div class="product-gallery">
+          <!-- Main Product Image -->
+          <div class="main-image">
+            <img
+              id="product-image"
+              src="images/hoodie.jpg"
+              alt="Premium Atlas Hoodie"
+            />
+          </div>
+
+          <!-- Product Thumbnails -->
+          <div class="thumbnail-gallery">
+            <div class="thumbnail">
+              <img src="images/hoodie.jpg" alt="Thumbnail 1" />
+            </div>
+
+            <div class="thumbnail">
+              <img src="images/hoodie.jpg" alt="Thumbnail 2" />
+            </div>
+
+            <div class="thumbnail">
+              <img src="images/hoodie.jpg" alt="Thumbnail 3" />
+            </div>
+
+            <div class="thumbnail">
+              <img src="images/hoodie.jpg" alt="Thumbnail 4" />
+            </div>
+          </div>
+        </div>
+        <!-- Product Information -->
+
+        <div class="product-info">
+          <h1 id="product-title">Premium Atlas Hoodie</h1>
+
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+
+          <h2 class="product-price" id="product-price">$120</h2>
+
+          <p class="product-description" id="product-description">
+            Crafted with premium materials for comfort, durability and timeless
+            style.
+          </p>
+
+          <div class="product-options">
+            <h3>Size</h3>
+
+            <div class="sizes">
+              <button>S</button>
+              <button>M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+          </div>
+
+          <div class="product-options">
+            <h3>Colour</h3>
+
+            <div class="colors">
+              <button>Black</button>
+
+              <button>White</button>
+
+              <button>Blue</button>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <button class="btn-primary">Add to Cart</button>
+
+            <button class="btn-secondary">Save to Vault</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <aside class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button class="close-cart">&times;</button>
+      </div>
+
+      <div class="cart-items">
+        <p class="empty-cart">Your cart is empty.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-summary">
+          <p>
+            <span>Subtotal</span>
+            <span>$<span id="sidebar-subtotal">0</span></span>
+          </p>
+
+          <p>
+            <span>Shipping</span>
+            <span>FREE</span>
+          </p>
+
+          <p>
+            <span>Tax</span>
+            <span>$0</span>
+          </p>
+
+          <hr />
+
+          <h3>
+            <span>Total</span>
+            <span>$<span id="sidebar-total">0</span></span>
+          </h3>
+        </div>
+
+        <button class="checkout-btn">Proceed to Checkout</button>
+
+        <button class="clear-cart">Clear Cart</button>
+      </div>
+    </aside>
+
+    <!-- ===============================
+     Atlas Vault Sidebar
+================================ -->
+
+    <div class="vault-sidebar">
+      <!-- Header -->
+      <div class="vault-header">
+        <div class="vault-title">
+          <h2>🧭 Atlas Vault</h2>
+
+          <p class="vault-subtitle">Your saved discoveries</p>
+        </div>
+
+        <button class="close-vault">&times;</button>
+      </div>
+
+      <!-- Vault Items -->
+
+      <div class="vault-items">
+        <p class="empty-vault">
+          🧭<br /><br />
+          Your Atlas Vault is empty.<br />
+          Save products to view them here.
+        </p>
+      </div>
+    </div>
+
+    <!--Footer section-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!--Brand-->
+        <div class="footer-brand">
+          <h2>ATLAS</h2>
+
+          <p>connecting trusted sellers with buyers around the world.</p>
+        </div>
+
+        <!--Quick links-->
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#">Categories</a>
+          <a href="#">Shop by Mood</a>
+          <a href="#">Become a Seller</a>
+        </div>
+
+        <!--Contact-->
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p>Email: support@atlas.com</p>
+          <p>Phone: +234 xxxxxxxxxx</p>
+        </div>
+
+        <!--Social Media-->
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">TikTok</a>
+          <a href="#">X (Twitter)</a>
+        </div>
+      </div>
+
+      <!--Copyright-->
+      <div class="footer-bottom">
+        <p>© 2026 Atlas. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!--Toast Notification-->
+    <div class="toast" id="toast">
+      <span id="toast-message"></span>
+    </div>
+
+    <div class="checkout-modal">
+      <div class="checkout-box">
+        <h2>Checkout</h2>
+
+        <p>Thank you for shopping with <strong>Atlas</strong>.</p>
+
+        <p>
+          Your Total: <strong>$<span id="checkout-total">0</span></strong>
+        </p>
+
+        <button class="confirm-order">Confirm Order</button>
+        <button class="close-checkout">Cancel</button>
+      </div>
+    </div>
+
+    <script src="java.js/toast.js"></script>
+    <script src="java.js/product.js"></script>
+    <script src="java.js/app.js"></script>
+    <script src="java.js/helpers.js"></script>
+
+    <script src="java.js/mobile.js"></script>
+    <script src="java.js/theme.js"></script>
+    <script src="java.js/vault.js"></script>
+    <script src="java.js/cart.js"></script>
+    <script src="java.js/checkout.js"></script>
+  </body>
+</html>

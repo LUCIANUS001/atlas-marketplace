@@ -10,6 +10,7 @@
     <title>Atlas Marketplace</title>
     <link rel="stylesheet" href="CSS/general.css" />
     <link rel="stylesheet" href="CSS/buttons.css" />
+    <link rel="stylesheet" href="CSS/toast.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -119,6 +120,8 @@
           data-name="running shoe"
           data-category="shoe"
           data-price="120"
+          data-image="images/shoe.jpg"
+          data-description="Crafted with premium materials for comfort, durability and timeless style."
         >
           <div class="product-image">Product Image</div>
 
@@ -140,6 +143,8 @@
           data-name="leather bag"
           data-category="bag"
           data-price="85"
+          data-image="images/bag.jpg"
+          data-description="Crafted with premium materials for comfort, durability and timeless style."
         >
           <div class="product-image">Product Image</div>
 
@@ -161,6 +166,8 @@
           data-name="luxury watch"
           data-category="watch"
           data-price="250"
+          data-image="images/watch.jpg"
+          data-description="Crafted with premium materials for comfort, durability and timeless style."
         >
           <div class="product-image">Product Image</div>
 
@@ -182,6 +189,8 @@
           data-name="classic hoodie"
           data-category="hoodie"
           data-price="70"
+          data-image="images/hoodie.jpg"
+          data-description="Crafted with premium materials for comfort, durability and timeless style."
         >
           <div class="product-image">Product Image</div>
 
@@ -427,6 +436,11 @@
       </div>
     </footer>
 
+    <!--Toast Notification-->
+    <div class="toast" id="toast">
+      <span id="toast-message"></span>
+    </div>
+
     <div class="checkout-modal">
       <div class="checkout-box">
         <h2>Checkout</h2>
@@ -442,6 +456,9 @@
       </div>
     </div>
 
+    <script src="java.js/toast.js"></script>
+    <script src="java.js/products.js"></script>
+    <script src="java.js/product.js"></script>
     <script src="java.js/app.js"></script>
     <script src="java.js/helpers.js"></script>
 

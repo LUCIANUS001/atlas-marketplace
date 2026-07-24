@@ -58,6 +58,7 @@ vaultButtons.forEach(function(button){
             name: productName,
             price: productPrice
         });
+        showToast("⭐ Saved to Atlas Vault", "info");
 
         localStorage.setItem("vaultItems", JSON.stringify(vaultItems));
 
@@ -113,6 +114,8 @@ function updateVaultSidebar(){
             vaultItems = vaultItems.filter(function(vaultItem){
                 return vaultItem.name !== item.name;
             });
+
+            showToast("🗑️ Removed from Atlas Vault", "error");
 
             localStorage.setItem("vaultItems", JSON.stringify(vaultItems));
 

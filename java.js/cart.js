@@ -42,6 +42,8 @@ addToCartButtons.forEach(function(button){
 
     let productCard = button.closest(".product-card");
 
+    if (!productCard) return;
+
     let productName = productCard.dataset.name;
 
     let exists = cartItems.some(function(item){
@@ -88,6 +90,8 @@ addToCartButtons.forEach(function(button){
                 quantity: 1
             });
 
+            showToast("🛒 Added to Cart", "success");
+
             cartCount++;
             totalPrice += productPrice;
 
@@ -100,6 +104,7 @@ addToCartButtons.forEach(function(button){
             totalPrice -= cartItems[index].price * cartItems[index].quantity;
 
             cartItems.splice(index, 1);
+            showToast("❌ Removed from Cart", "error");
 
             button.textContent = "Add to Cart";
             button.classList.remove("in-cart");
@@ -297,6 +302,7 @@ updateCartSidebar();
 clearCartButton.addEventListener("click", function(){
 
     cartItems = [];
+    showToast("🗑️ Cart Cleared", "warning");
     cartCount = 0;
     totalPrice = 0;
 
